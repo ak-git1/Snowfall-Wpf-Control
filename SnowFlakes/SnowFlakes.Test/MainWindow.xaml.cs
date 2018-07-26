@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using AkSoft.Wpf.SnowFlakes;
+using Ak.Wpf.SnowFlakes;
 
 namespace SnowFlakes.Test
 {

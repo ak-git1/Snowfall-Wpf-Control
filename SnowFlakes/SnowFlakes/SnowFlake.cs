@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace AkSoft.Wpf.SnowFlakes
+namespace Ak.Wpf.SnowFlakes
 {
     /// <summary>
     /// SnowFlake

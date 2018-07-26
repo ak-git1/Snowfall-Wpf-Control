@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
@@ -8,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SnowFlakes")]
 [assembly: AssemblyDescription("WPF component for snowfall demonstration")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("AkSoft")]
+[assembly: AssemblyCompany("AkSoftware")]
 [assembly: AssemblyProduct("SnowFlakes")]
-[assembly: AssemblyCopyright("Copyright © AkSoft 2017")]
+[assembly: AssemblyCopyright("Copyright © AkSoftware 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
