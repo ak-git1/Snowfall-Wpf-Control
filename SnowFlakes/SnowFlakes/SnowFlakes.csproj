@@ -50,17 +50,6 @@
     <Compile Include="Snowflake.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Snowflakes\snowflake1.png" />
-    <Resource Include="Snowflakes\snowflake2.png" />
-    <Resource Include="Snowflakes\snowflake3.png" />
-    <Resource Include="Snowflakes\snowflake4.png" />
-    <Resource Include="Snowflakes\snowflake5.png" />
-    <Resource Include="Snowflakes\snowflake6.png" />
-    <Resource Include="Snowflakes\snowflake7.png" />
-    <Resource Include="Snowflakes\snowflake8.png" />
-    <Resource Include="Snowflakes\snowflake9.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="SnowflakesBlue\snowflake1.png" />
     <Resource Include="SnowflakesBlue\snowflake10.png" />
     <Resource Include="SnowflakesBlue\snowflake2.png" />
