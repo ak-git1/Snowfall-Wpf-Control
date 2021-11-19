@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Snowfall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnowfallColor.cs" />
     <Compile Include="Snowflake.cs" />
   </ItemGroup>
   <ItemGroup>
