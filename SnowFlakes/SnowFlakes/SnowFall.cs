@@ -109,15 +109,16 @@ namespace Ak.Wpf.SnowFlakes
         /// Constructor
         /// </summary>
         /// <param name="canvas">Canvas where snow falls</param>
-        public Snowfall(Canvas canvas) : this(canvas,   "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake1.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake2.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake3.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake4.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake5.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake6.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake7.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake8.png",
-                                                        "pack://application:,,,/SnowFlakes;component/Snowflakes/snowflake9.png")
+        public Snowfall(Canvas canvas) : this(canvas,   "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake1.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake2.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake3.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake4.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake5.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake6.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake7.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake8.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake9.png",
+                                                        "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake10.png")
         {            
         }
 
@@ -143,6 +144,93 @@ namespace Ak.Wpf.SnowFlakes
         #endregion
 
         #region Public methods
+
+        /// <summary>
+        /// Creates new snowfall
+        /// </summary>
+        /// <param name="canvas">Canvas where snow falls</param>
+        /// <param name="color">Snowfall color</param>
+        /// <returns>New snowfall</returns>
+        public static Snowfall Create(Canvas canvas, SnowfallColor color)
+        {
+            switch (color)
+            {
+                case SnowfallColor.Default:
+                    return new Snowfall(canvas);
+
+                case SnowfallColor.Blue:
+                    return new Snowfall(canvas, "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake1.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake2.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake3.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake4.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake5.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake6.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake7.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake8.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake9.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake10.png");
+
+                case SnowfallColor.White:
+                    return new Snowfall(canvas, "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake1.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake2.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake3.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake4.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake5.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake6.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake7.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake8.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake9.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake10.png");
+
+                case SnowfallColor.Gray:
+                    return new Snowfall(canvas, "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake1.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake2.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake3.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake4.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake5.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake6.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake7.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake8.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake9.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake10.png");
+
+
+                case SnowfallColor.Mix:
+                    return new Snowfall(canvas, "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake1.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake2.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake3.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake4.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake5.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake6.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake7.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake8.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake9.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesBlue/snowflake10.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake1.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake2.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake3.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake4.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake5.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake6.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake7.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake8.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake9.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesWhite/snowflake10.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake1.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake2.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake3.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake4.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake5.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake6.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake7.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake8.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake9.png",
+                                                "pack://application:,,,/SnowFlakes;component/SnowflakesGray/snowflake10.png");
+
+                default:
+                    throw new ArgumentException(nameof(color));
+            }
+        }
 
         /// <summary>
         /// Start snowfall
